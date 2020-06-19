@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8">
+<title>落ち合わせ一覧</title>
+</head>
+<body>
+<p>
+    <a href="/form">お問い合わせ</a>
+</p>
+<table border="1">
+    <thead>
+        <tr>
+            <th>名前</th>
+            <th>年齢</th>
+            <th>性別</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="inquiry :${inquiries}" th:object="${inquiry}">
+            <td th:text="*{name}">なまえ</td>
+            <td th:text="*{age}">ねんれい</td>
+            <td th:text="*{gender}">せいべつ</td>
+            <td><a href="@{|/inquiry/*{id}|}">詳細</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
