@@ -1,13 +1,13 @@
-package jp.winschool.spring.test08;
+package jp.winschool.spring.dispInfo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Test08Application {
+public class DispinfoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Test08Application.class, args);
+		SpringApplication.run(DispinfoApplication.class, args);
 	}
 
 }

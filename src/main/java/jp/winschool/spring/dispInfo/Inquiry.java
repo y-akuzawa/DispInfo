@@ -1,4 +1,4 @@
-package jp.winschool.spring.test08;
+package jp.winschool.spring.dispInfo;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package jp.winschool.spring.test08;
+package jp.winschool.spring.dispInfo;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -12,7 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class Test08Controller {
+public class DispinfoController {
 	
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
